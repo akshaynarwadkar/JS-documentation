@@ -6,7 +6,6 @@
 
 html,body{
     font-family: 'Roboto', sans-serif;
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     line-height: 1.4;
     font-weight: 300;
     scroll-behavior: smooth;
@@ -27,14 +26,14 @@ html,body{
 }
 
 .heading{
-    width: 200px;
+    max-width: 200px;
     text-align:left; 
     padding: 15px;
     border-bottom: 1px solid #ccc;
 }
 
 .menu-item{
-    width: 200px;
+    max-width: 200px;
     border-bottom: 1px solid #ccc;
     padding: 10px;
     transition: 0.2s ease-in-out;
@@ -85,15 +84,20 @@ html,body{
     background-color: #ebebeb;
     padding: 20px;
     margin-bottom: 10px;
+    
+}
+
+.code pre{
     overflow: auto;
 }
 
-@media (max-width:786px){
+@media (max-width:480px){
     
-    .menu{
-        width: 20%;
+    .flex{
+        display: flex;
+        flex-direction: column;
+    
     }
-    .info-sections{
-        width: 100%;
-    }
+
+
 }
